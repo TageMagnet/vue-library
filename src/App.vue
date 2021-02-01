@@ -8,7 +8,12 @@
 export default {
   data: () => ({
     slideToggle: true
-  })
+  }),
+  computed: {
+    Book(){
+      return this.$store.state.books
+    }
+  }
 }
 </script>
 
